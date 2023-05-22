@@ -10379,17 +10379,20 @@ nav[aria-label="breadcrumb"] li:before {
   border-bottom-style: none;
   border-bottom-width: medium;
   border-bottom: 1px solid;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 #controls-form
 {
   background: #dee2e6;
-  padding: 20px 10px;
+  padding: 30px 35px;
   border-radius: 20px;
 }
 #controls-form h6
 {
   color: #002929;
+  font-size: 20px;
+  font-weight: 500;
 }
 /* custom */
 .section-muted
