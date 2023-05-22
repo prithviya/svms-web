@@ -9671,8 +9671,13 @@ textarea {
       top: 0;
       z-index: 1; }
   .hero, .hero > .container > .row {
-    height: 70vh;
+    height: 80vh;
     min-height: 600px; }
+    @media only screen and (max-width: 600px) {
+      .hero, .hero > .container > .row {
+        height: 50vh;;
+      }
+    }
   .hero.page-inner, .hero.page-inner > .container > .row {
     height: 70vh;
     min-height: 300px; }
