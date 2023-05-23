@@ -9671,7 +9671,7 @@ textarea {
       top: 0;
       z-index: 1; }
   .hero, .hero > .container > .row {
-    height: 70vh;
+    height: 80vh;
     min-height: 600px; }
   .hero.page-inner, .hero.page-inner > .container > .row {
     height: 70vh;
@@ -9681,14 +9681,17 @@ textarea {
     z-index: 2; }
   .hero .heading {
     color: #fff;
-    font-size: 2.8rem;
-    margin-bottom: 30px;
-    font-weight: 700; }
-    @media only screen and (max-width: 500px) {
-      .hero .heading {
-        display: none;
-      }
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    margin-bottom: 60px;
+    font-weight: 600;}
+    @media only screen and (max-width: 500px)
+    {
+        .hero .heading
+        {
+            display:none;
+        }
     }
+    
   .hero .lead {
     color: #fff;
     font-size: 14px;
@@ -9725,8 +9728,8 @@ textarea {
   left: 0;
   right: 0; }
   .hero-slide .img {
-    height: 100vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }

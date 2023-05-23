@@ -107,11 +107,25 @@
               <h6>
                 Admissions Open 2023-2024
               </h6>
-              <input type="text" class="custom-input" placeholder="Student Name">
-              <input type="email" class="custom-input" placeholder="Parent Email Id">
-              <input type="tel" class="custom-input" placeholder="Parent Mobile Number">
-              <input type="text" class="custom-input" placeholder="Admission for class">
-              <input type="text" class="custom-input" placeholder="City">
+              <input type="text" name="name"required class="custom-input" placeholder="Student Name">
+              <input type="email" name="email" required class="custom-input" placeholder="Parent Email Id">
+              <input type="tel" name="tel" required class="custom-input" placeholder="Parent Mobile Number">
+               <select class="custom-input name="course"  required>
+                    <option value="">Select the Course</option>
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>   
+            </select>
+              <input type="text" name="city" required class="custom-input" placeholder="City">
               <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
@@ -133,7 +147,6 @@
             <p>
               <a
                 href="#"
-                target="_blank"
                 class="btn btn-primary text-white"
                 >Apply Now</a
               >
@@ -378,7 +391,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6 col-12 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
               <img width="60" height="60" src="https://img.icons8.com/ios/50/ac3936/ballerina-full-body.png" alt="ballerina-full-body"/>
               <h3 class="mb-3">Classical Dance</h3>
@@ -388,7 +401,7 @@
               <p><a href="#" class="learn-more">Enquire Now</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-md-6 col-12 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature">
               <img width="60" height="60" src="https://img.icons8.com/ios/50/ac3936/ballroom-dance.png" alt="ballroom-dance"/>
               <h3 class="mb-3">Western Dance</h3>
@@ -398,7 +411,7 @@
               <p><a href="#" class="learn-more">Enquire Now</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-6 col-12 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature">
               <img width="60" height="60" src="https://img.icons8.com/ios/50/ac3936/kicking.png" alt="kicking"/>
               <h3 class="mb-3">Karate</h3>
@@ -408,7 +421,7 @@
               <p><a href="#" class="learn-more">Enquire Now</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-md-6 col-12 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
               <img width="60" height="60" src="https://img.icons8.com/ios/50/ac3936/meditation-guru.png" alt="meditation-guru"/>
               <h3 class="mb-3">Yoga</h3>
@@ -532,48 +545,54 @@
             <form action="#">
               <div class="row">
                 
-                <div class="col-6 mb-3">
+                <div class="col-md-6 col-12 mb-3">
                   <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <input
-                    type="text"
+                    type="text" required
+                    name="name"
                     class="form-control"
                     placeholder="Student Name"
                   />
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-md-6 col-12 mb-3">
                   <input
-                    type="email"
+                    type="email" required
+                    name="email"
                     class="form-control"
-                    placeholder="Your Email"
+                    placeholder="Parent Email"
                   />
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-md-6 col-12 mb-3">
                   <input
-                    type="text"
+                    type="text" required
+                    name="tel"
                     class="form-control"
                     placeholder="Phone number"
                   />
                 </div>
-                <div class="col-6 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Admission for class"
-                  />
+                <div class="col-md-6 col-12 mb-3">
+                  <select  class="form-control" name="course"  required>
+                    <option value="">Select the Course</option>
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>   
+            </select>
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-md-6 col-12 mb-3">
                   <input
-                  type="text"
-                    id=""
+                  type="text" required
+                  name="city"
                     class="form-control"
                     placeholder="City"
-                  ></textarea>
+                  >
                 </div>
 
                 <div class="col-12">
